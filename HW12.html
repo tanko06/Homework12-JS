@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework 12 JS</title>
+    <style>
+      .image-to-show {
+        width: 200px;
+        height: 200px;
+      }
+      .images-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+      }
+  </style>
+  </head>
+  <body> 
+    <div class="images-wrapper">  
+    <div>
+    <button id="start" type="button" value="Start" onclick="mode('play');startSlideshow();">Start</button>
+    <button id="stop" type="button" value="Stop" disabled="disabled" onclick="mode('pause');startSlideshow();">Stop</button> 
+    </div>
+    <img id="slideshow"/>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
